@@ -34,7 +34,7 @@ jobs:
       with:
         tag: v1.0.0
         name: Emulator App v1.0.0
-        files: dist/app.exe
+        artifacts: dist/app.exe  
 
 
     - name: Deploy project
