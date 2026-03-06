@@ -17,9 +17,21 @@ jobs:
       with:
         python-version: "3.10"
 
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
+    - name: Install adbutils
+      run: pip install adbutils
+
+    - name: Install numpy
+      run: pip install numpy
+
+    - name: Install opencv
+      run: pip install opencv-python
+
+    - name: Install pillow
+      run: pip install pillow
+
+    - name: Install scrcpy from GitHub
+      run: pip install git+https://github.com/Genymobile/scrcpy.git
+
 
     - name: Run tests
       run: |
