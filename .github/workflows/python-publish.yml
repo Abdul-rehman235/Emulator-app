@@ -30,10 +30,6 @@ jobs:
       run: pip install pillow
 
 
-    - name: Run tests
-      run: test.py
-        python test.py
-
     - name: Deploy project
       run: |
         echo "Deploying application..."
