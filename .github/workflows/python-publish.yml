@@ -29,6 +29,12 @@ jobs:
     - name: Install pillow
       run: pip install pillow
 
+    - name: Upload all build files
+      uses: actions/upload-artifact@v3
+      with:
+        name: emulator-build
+        path: dist/
+
     - name: Install pyinstaller
       run: pip install pyinstaller
 
