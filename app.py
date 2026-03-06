@@ -2,6 +2,8 @@ import queue
 import threading
 import tkinter as tk
 from tkinter import messagebox, ttk
+import scrcpy
+
 
 import cv2
 import numpy as np
