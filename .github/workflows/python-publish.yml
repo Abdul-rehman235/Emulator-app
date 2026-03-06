@@ -31,7 +31,7 @@ jobs:
 
 
     - name: Run tests
-      run: python tests/test.py
+      run: test.py
         python test.py
 
     - name: Deploy project
