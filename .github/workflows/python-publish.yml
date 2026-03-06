@@ -29,12 +29,19 @@ jobs:
     - name: Install pillow
       run: pip install pillow
 
+    - name: install pyinstaller
+      run: pip install pyinstaller
+
+    - name: Build EXE
+      run: pyinstaller --onefile app.py
+
     - name: Create GitHub Release
       uses: ncipollo/release-action@v1
       with:
-        tag: v1.0.0
-        name: Emulator App v1.0.0
-        artifacts: dist/app.exe  
+       tag: v1.0.0
+       name: Emulator App v1.0.0
+       artifacts: dist/app.exe
+       makeLatest: true
 
 
     - name: Deploy project
