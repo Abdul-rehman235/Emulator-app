@@ -29,9 +29,6 @@ jobs:
     - name: Install pillow
       run: pip install pillow
 
-    - name: Install scrcpy from GitHub
-      run: python-scrcpy>=0.1.0
-
 
     - name: Run tests
       run: |
